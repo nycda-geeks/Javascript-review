@@ -1,0 +1,68 @@
+<script>
+
+function parrabois (parra1, parra2, parra3){
+	return (parra1 + parra2 + parra3)
+}
+console.log(parrabois(3,4,5))
+
+
+function lastletter (wooord){
+ 	return (wooord.slice(-1));
+ }
+ console.log (lastletter("cattywampus"));
+
+
+function kubus (afmeting){
+	return (afmeting*afmeting*afmeting)
+}
+console.log (kubus(10))
+
+
+function rewind(stringeling) {
+  var o = '';
+  for (var i = stringeling.length - 1; i >= 0; i--)
+    o += stringeling[i];
+  return o;
+}
+console.log (rewind("cattywampus"))
+
+
+var stuff =["smelly","tight","invisable"]
+var wear = ["socks", "pants", "shirt"]
+function takeintwoarrays (array1, array2){
+	var returnobject ={};	
+	for (i=0; i< array1.length; i++){
+		returnobject[array1[i]] = array2[i];
+	}
+return returnobject;
+}
+console.log(takeintwoarrays(stuff, wear));
+
+
+var arrayrab = ["moeder: ", "vader: ", "zoon: "]
+var arrayrabba = ["Kim", "Pieter", "Rocketpower"]
+function morfarrays (Katja){
+	var returnarray = {};
+	for (var i = 0; i < Katja.length; i++)
+		returnarray[arrayrab[i]] = arrayrabba[i];
+	return returnarray;
+}
+console.log (morfarrays(arrayrab, arrayrabba))
+
+
+var myObject = {
+	"x": "10",
+	"y": "100",
+	"z": "1000"}
+function makeArray(object) {
+var value = []
+var Ki = [];
+for (var Hash in object) {
+    Ki.push(Hash)
+    value.push(object[Hash]);
+}
+console.log(Ki, value)
+}
+makeArray(myObject)
+     
+ </script>
